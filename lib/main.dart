@@ -1,7 +1,9 @@
-import 'package:ecommerce/widgets/app_Carousel.dart';
-import 'package:ecommerce/widgets/app_bar.dart';
-import 'package:ecommerce/widgets/custom_drawer.dart';
+import 'package:ecommerce/components/app_Carousel.dart';
+import 'package:ecommerce/components/app_bar.dart';
+import 'package:ecommerce/components/custom_drawer.dart';
 import 'package:flutter/material.dart';
+
+import 'components/categories_widget.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -23,6 +25,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           customCarousel(),
+          HorizontalList(),
         ],
       ),
     );
