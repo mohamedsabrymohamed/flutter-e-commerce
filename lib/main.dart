@@ -1,3 +1,4 @@
+import 'package:ecommerce/widgets/app_Carousel.dart';
 import 'package:ecommerce/widgets/app_bar.dart';
 import 'package:ecommerce/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: customAppBar(),
       drawer: customDrawer(),
+      body: ListView(
+        children: [
+          customCarousel(),
+        ],
+      ),
     );
   }
 }
