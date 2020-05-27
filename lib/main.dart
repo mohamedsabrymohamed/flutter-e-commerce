@@ -25,7 +25,15 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           customCarousel(),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('Categories'),
+          ),
           HorizontalList(),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Text('Recent Products'),
+          )
         ],
       ),
     );
