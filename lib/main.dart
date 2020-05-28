@@ -1,6 +1,7 @@
 import 'package:ecommerce/components/app_Carousel.dart';
 import 'package:ecommerce/components/app_bar.dart';
 import 'package:ecommerce/components/custom_drawer.dart';
+import 'package:ecommerce/components/products.dart';
 import 'package:flutter/material.dart';
 
 import 'components/categories_widget.dart';
@@ -33,7 +34,12 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Text('Recent Products'),
-          )
+          ),
+          //grid view
+          Container(
+            height: 320.0,
+            child: Products(),
+          ),
         ],
       ),
     );
